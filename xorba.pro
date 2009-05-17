@@ -1,15 +1,4 @@
 # -------------------------------------------------
-# Project created by QtCreator 2009-05-09T19:05:33
-# -------------------------------------------------
-QT -= gui
-TARGET = xorba
-CONFIG += console
-CONFIG -= app_bundle
-TEMPLATE = app
-SOURCES += src/main.cpp
-OTHER_FILES +=
-
-# -------------------------------------------------
 # Build Version
 # -------------------------------------------------
 
@@ -26,3 +15,16 @@ VERSION = $$system(git show --abbrev-commit | grep "^commit" | cut -c 8-14)
 
 VERSTR = '\\"$${VERSION}\\"'  # place quotes around the version string
 DEFINES += VER=\"$${VERSTR}\" # create a VER macro containing the version string
+
+
+# -------------------------------------------------
+# Project created by QtCreator 2009-05-09T19:05:33
+# -------------------------------------------------
+QT -= gui
+TARGET = xorba
+CONFIG += console
+CONFIG -= app_bundle
+TEMPLATE = app
+SOURCES += src/main.cpp
+OTHER_FILES +=
+
